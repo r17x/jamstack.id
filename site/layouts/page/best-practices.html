@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="best-practices">
+  <div class="contained">
+    <h1 class="headline">Praktik terbaik</h1>
+    <p class ="cta">Saat membangun proyek JAMstack, Anda benar-benar bisa mendapatkan yang terbaik dari <em>stack</em> jika Anda tetap berpegang pada beberapa praktik terbaik.</p>
+    <div class="grid">
+      {{ range .Site.Data.bestpractices.bestpractices }}
+        <div class="best-practice">
+          <h4><img src="/img/thumbs-up.svg" /> {{ .title }}</h4>
+          <p>{{ .description | markdownify }}</p>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}

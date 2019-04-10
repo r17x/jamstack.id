@@ -1,0 +1,29 @@
+{{ define "main" }}
+<div class="examples">
+  <div class="contained">
+    <div class="cta grid">
+      <h1>Jika Anda dapat menggunakannya di web, Anda mungkin dapat membangunnya dengan JAMstack. Jutaan orang sudah melakukannya. Lihat JAMstack dari contoh-contoh di bawah ini:</h1>
+      <p>
+        <strong>Ingin mendapatkan situs Anda terdaftar di sini?</strong>
+        Kirim <em>pull request</em> dengan informasi proyek JAMstack Anda <a href="https://github.com/jamstackid/jamstack.id" class="text-link">disini</a>.
+      </p>
+    </div>
+    <div class="grid">
+      {{ range .Site.Data.examples.examples }}
+        <a class="example" href="{{ .link }}">
+          <div class="browser">
+            <div class="controls">•••</div>
+          </div>
+          <img src="{{ .thumbnailurl }}"/>
+          <h1>{{ .title }}</h1>
+          <ul class="tools">
+            {{ range .tools }}
+              <li>{{ .tool }}</li>
+            {{ end }}
+          </ul>
+        </a>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}

@@ -1,0 +1,15 @@
+---
+bestpractices:
+  - title: Seluruh Proyek pada CDN
+    description: Karena proyek JAMstack tidak bergantung pada kode sisi server, mereka dapat didistribusikan alih-alih hidup di satu server. Melayani langsung dari CDN membuka kecepatan dan kinerja yang tidak dapat dikalahkan. Semakin banyak aplikasi Anda yang diunggah di edge, semakin baik pengalaman pengguna.
+  - title: Semuanya Hidup di Git
+    description: Dengan proyek JAMstack, siapa pun dapat melakukan `git clone`, menginstal semua dependensi yang diperlukan dengan prosedur standar (seperti `npm install`), dan siap menjalankan proyek lengkap secara lokal. Tidak ada basis data untuk dikloning, tidak ada instalasi yang rumit. Ini mengurangi gesekan kontributor, dan juga menyederhanakan pementasan dan menguji alur kerja.
+  - title: Alat Bangun Modern
+    description: Manfaatkan dunia alat bangunan modern. Ini bisa menjadi rimba untuk mendapatkan orientasi dan ini adalah ruang yang bergerak cepat, tetapi Anda ingin dapat menggunakan standar web masa depan tanpa menunggu browser masa depan. Dan itu berarti Babel, PostCSS, Webpack, dan teman-teman.
+  - title: Pembuatan Otomatis
+    description: Karena markup JAMstack adalah prebuilt, perubahan konten tidak akan ditayangkan sampai Anda menjalankan bangunan lain. Mengotomatiskan proses ini akan menghemat banyak frustrasi. Anda dapat melakukannya sendiri dengan webhooks, atau menggunakan platform penerbitan yang menyertakan layanan secara otomatis.
+  - title: Penyebaran Atomic
+    description: Karena proyek JAMstack tumbuh sangat besar, perubahan baru mungkin memerlukan penyebaran ratusan file. Mengunggah ini satu per satu dapat menyebabkan kondisi yang tidak konsisten saat proses selesai. Anda dapat menghindari ini dengan sistem yang memungkinkan Anda melakukan "penyebaran atom", di mana tidak ada perubahan yang ditayangkan sampai semua file yang diubah telah diunggah.
+  - title: Validasi Cache Instan
+    description: Ketika siklus build-to-deploy menjadi kejadian biasa, Anda perlu tahu bahwa ketika sebuah deploy ditayangkan, itu benar-benar ditayangkan. Hilangkan keraguan dengan memastikan CDN Anda dapat menangani pembersihan cache instan.
+---

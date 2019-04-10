@@ -1,0 +1,25 @@
+---
+examples:
+  - title: Staticaly
+    description: Staticaly is a free multi-CDN for Git repositories, WordPress, images and other assets with high-performance of caching and optimization.
+    link: https://www.staticaly.com
+    thumbnailurl: https://cdn.staticaly.com/screenshot/staticaly.com?w=596&h=396
+    tools:
+      - tool: Jekyll
+      - tool: Staticaly CDN
+      - tool: Marsble APIs
+      - tool: Netlify
+      - tool: GitHub
+      - tool: Google Analytics
+  - title: WP2Static
+    description: WordPress plugin to generate a static copy of your site and deploy to GitHub Pages, S3, Netlify, etc. Increase security, pageload speed and hosting options.
+    link: https://wp2static.com
+    thumbnailurl: https://cdn.staticaly.com/screenshot/wp2static.com?w=596&h=396
+    tools:
+      - tool: WordPress
+      - tool: WP2Static plugin
+      - tool: Snipcart
+      - tool: Netlify
+      - tool: GitHub
+      - tool: Google Fonts
+---

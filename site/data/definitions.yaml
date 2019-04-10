@@ -1,0 +1,23 @@
+---
+jamstack: "**JAMstack**: kata benda &#92;’jam-stak’&#92; <span><br></span>Arsitektur pengembangan web modern berdasarkan pada JavaScript sisi klien, interaktif API, dan Markup prebuilt."
+explanation: Ketika kita berbicara tentang "Stack," kita tidak lagi berbicara tentang sistem operasi, server web tertentu, bahasa pemrograman backend, atau database.<br><br>JAMstack bukan tentang teknologi spesifik. Ini adalah cara baru untuk membangun situs web dan aplikasi yang memberikan kinerja yang lebih baik, keamanan yang lebih tinggi, biaya penskalaan yang lebih rendah, dan pengalaman pengembang yang lebih baik.
+
+javascript: "Pemrograman dinamis apa pun selama siklus permintaan/respons ditangani oleh JavaScript, berjalan sepenuhnya pada klien. Ini bisa berupa kerangka frontend, pustaka, atau bahkan vanilla JavaScript."
+apis: "Semua proses sisi server atau tindakan basis data disarikan ke dalam API yang interaktif atau dapat digunakan kembali, diakses melalui HTTPS dengan JavaScript. Ini dapat dibuat khusus atau memanfaatkan layanan pihak ketiga."
+markup: "Markup dalam bentuk template harus dibangun sebelumnya pada waktu penyebaran, biasanya menggunakan generator situs untuk situs konten, atau alat build untuk aplikasi web.<br><br>[Ingin melihat beberapa contoh?](/examples)"
+
+disqualifications:
+  - disqualification: Situs yang dibangun dengan CMS sisi server seperti WordPress, Drupal, Joomla, atau Squarespace.
+  - disqualification: Aplikasi web yang dijalankan server monolitik yang bergantung pada Ruby, Node, atau bahasa backend lainnya.
+  - disqualification: Aplikasi halaman tunggal yang menggunakan rendering isomorfik untuk membangun tampilan di server saat runtime.
+
+advantages:
+  - advantage: Performa yang lebih baik
+    description: Mengapa menunggu halaman untuk dibangun *on-the-fly* ketika Anda dapat menghasilkannya pada waktu penggunaan? Ketika datang untuk meminimalkan waktu untuk byte pertama, tidak ada yang mengalahkan file pre-built yang dilayani lebih dari CDN.
+  - advantage: Keamanan Lebih Tinggi
+    description: Dengan proses sisi server yang diabstraksikan menjadi microservice API, area permukaan untuk serangan berkurang. Anda juga dapat memanfaatkan keahlian domain dari layanan pihak ketiga spesialis.
+  - advantage: Penskalaan Lebih Murah, Lebih Mudah
+    description: Ketika penyebaran Anda berjumlah setumpuk file yang dapat disajikan di mana saja, penskalaan adalah masalah melayani file-file itu di lebih banyak tempat. CDN adalah cara sempurna untuk ini, dan mereka sering memasukan penskalaan dalam semua paket mereka.
+  - advantage: Pengalaman Pengembang yang Lebih Baik
+    description: Kopling yang longgar dan pemisahan kontrol memungkinkan pengembangan dan debugging yang lebih bertarget, dan pilihan CMS untuk generator situs yang semakin luas menghilangkan kebutuhan untuk mempertahankan tumpukan terpisah untuk konten dan pemasaran.
+---

@@ -1,0 +1,8 @@
+baseurl: DEPLOY_PRIME_URL
+defaultContentLanguage: "id"
+languageCode: "id"
+title: "JAMstack.id | JavaScript, APIs, dan Markup"
+disableKinds: ["404"]
+metaDataFormat: "yaml"
+
+publishDir: "dist"
